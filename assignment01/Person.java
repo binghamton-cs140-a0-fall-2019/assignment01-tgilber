@@ -1,22 +1,28 @@
 package assignment01;
 
 /**
- * 
  * @author CS 140
  *
  */
+ 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+
 public class Person {
 	private String firstNames; 
 	private String lastNames;
 	private int ssn;
-	private DateAndPlaceOfBirth placeDob;
+	private DateAndPlaceOfBirth placeDOB;
 	private StreetUSAddress address;
+	
 	/**
 	 * 
 	 * @param firstNames
 	 * @param lastNames
 	 * @param ssn
-	 * @param placeDob
+	 * @param placeDOB
 	 * @param address
 	 */
 	public Person(String fstNames, String lstNames, String ssnString, DateAndPlaceOfBirth pdob,
@@ -33,7 +39,7 @@ public class Person {
 			System.out.println("Bad format for the SSN, use only digits or use '-' separators");
 			throw new IllegalArgumentException("This entry is not acceptable: " + ssnString);
 		}
-		placeDob = pdob;
+		placeDOB = pdob;
 		address = addr;
 	}
 	/**
@@ -62,7 +68,25 @@ public class Person {
 		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000); 
 
 	}
+	
 // TODO provide the getter methods for placeDob and address 
+
+	public DateAndPlaceOfBirth getplaceDOB(){
+		
+		return placeDOB;
+	}
+	
+	public StreetUSAddress getAddress(){
+		
+		return address;
+	}
+
+	@Override
+	public String toString() {
+			return String.format("%s %s (%s),%n%s,%s", firstNames, lastNames, getSSN(), 
+			placeDOB, address);
+	}
+
 // TODO Override the public String toString() method that is similar to the 
 // toString of the StreetUSAddress class and will print a person as:
 // Jane Doe (111-22-3333), 
@@ -70,4 +94,7 @@ public class Person {
 // 123 Main Street
 // Apt 1B
 // Binghamton, NY 13905
+	
+	
+	
 }

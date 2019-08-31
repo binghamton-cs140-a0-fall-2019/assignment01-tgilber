@@ -1,0 +1,33 @@
+
+Tests for ComputerOwnerTester.java:%nComputer List, Owner: Moen Aziz (234-56-7890),
+Date and place of birth: 1999-04-13, Brooklyn, New York, USA,
+Place1,
+Place2,
+Albany,New York,23456
+Computers: [Dell, 8700k, 16GB Memory, 2.0TB Solid State Drive, Price: $4000.00 , Acer, 7700k, 16GB Memory, 1.5TB Solid State Drive, Price: $3000.00 ]
+
+Test for PersonTester.java:Tyler Gilbert (123-45-6789),
+Date and place of birth: 2000-07-31, Kingston, New York, USA,
+Road1,
+Road2,
+Kingston,New York,12345
+
+TESTS FOR Computer.java:
+
+Dell2, 8700k, 16GB Memory, 2.0TB Solid State Drive, Price: $4000.00 
+Samsung2, 6700k, 8GB Memory, 800GB Hard Drive, Price: $1500.00 
+Acer2, 7700k, 16GB Memory, 1.5TB Solid State Drive, Price: $3000.00 
+Lenovo2, 6700k, 8GB Memory, 600GB Hard Drive, Price: $1000.00 
+
+
+TESTS FOR USAddressTester.java:
+
+Sit Road,
+Ap#867,
+Azusa,New York,39531
+%n
+Fusce Road,
+P.O. Box 283,
+Frederick,Nebraska,20620
+
+TESTS FOR DOBTester.java:

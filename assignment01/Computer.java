@@ -6,6 +6,10 @@ package assignment01;
  * @author CS 140
  *
  */
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 public class Computer {
 	private String brand;
 	private String cpuDescription;
